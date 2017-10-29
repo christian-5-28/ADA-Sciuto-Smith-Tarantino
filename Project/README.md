@@ -74,7 +74,10 @@ This list is not final and might grow or shrink as the project progresses.
 # A list of internal milestones up until project milestone 2
 _Add here a sketch of your planning for the next project milestone._
 
-Tomorrow.
+Open image in new tab to zoom.
+
+![Planning for Milestone 2](images/MS2_Planning.jpg)
+
 
 # Questions for TAa
 _Add here some questions you have for us, in general or project-specific._
