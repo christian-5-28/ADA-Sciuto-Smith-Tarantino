@@ -14,7 +14,7 @@ The core idea is to thoroughly explore rhetoric (e.g. word usage) in the Trump T
 More specifically, we want to analyze the change before and after he announced his presidential candidacy and before and after his election. In addition these long-period analytics, we would also like to explore the change in rhetoric incurred by related political scandals or major international events. Lastly, we would also like to compare Trump's rhetoric with Clinton's and Obama's.
 
 Motivation behind project?
-WE COULD SAY SOMETHING LIKE: "HE TWEETS A LOT AND EVEN MORE AFTER HIS ELECTION HE INFLUENCES A LOT OF PEOPLE WITH HIS TWEETS. HOW CAN THEY BE GOOD OR BAD?
+WE COULD SAY SOMETHING LIKE: "HE TWEETS A LOT AND EVEN MORE AFTER HIS ELECTION HE INFLUENCES A LOT OF PEOPLE WITH HIS TWEETS. WE WOULD LIKE TO DISTINGUISH PATTERNS THAT CAN LABEL A TWEET AS "GOOD" OR "BAD"
 Curiosity maybe?
 
 
