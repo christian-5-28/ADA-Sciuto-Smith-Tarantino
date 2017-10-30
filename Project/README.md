@@ -7,7 +7,7 @@ The core idea is to thoroughly explore rhetoric (e.g. word usage) in the Trump T
 
 More specifically, we want to analyze the change before and after he announced his presidential candidacy and before and after his election. In addition these long-period analytics, we would also like to explore the change in rhetoric incurred by related political scandals or major international events. Lastly, we would also like to compare Trump's rhetoric with Clinton's and Obama's.
 
-The main motivation beind this project is a facsination with how such a condensed messaging format influenecs so many people. We were curious about if we could take advandage of the brief format and find patterns and/or classify a tweet as 'good' or 'bad'.
+The main motivation beind this project is a fascination with how such a condensed messaging format influences so many people. We were curious to see if we could take advandage of the brief format and find patterns and/or classify a tweet as 'good' or 'bad'.
 
 
 ## Research questions
@@ -32,7 +32,7 @@ We would like to answer/explore the following:
 
 * When did the phrase "Fake News" arise? Explore usage frequency connection to scandals.
 
-* What are the patterns he uses when he tweets something agressive, defensive, or to to discredit someone? Frequency of these patterns.
+* What are the patterns he uses when he tweets something agressive, defensive, or to discredit someone? What is the frequency of these patterns?
 
 
 ## Datasets
