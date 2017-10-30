@@ -98,11 +98,5 @@ Week by week. Deadline is 28/11 - 2017, i.e. Tuesday week 48.
 </table>
 
 
-_Note: Deprecated_  
-Open image in new tab to zoom.
-
-![Planning for Milestone 2](images/MS2_Planning.jpg)
-
-
 ## Questions for TAa
 _Add here some questions you have for us, in general or project-specific._
