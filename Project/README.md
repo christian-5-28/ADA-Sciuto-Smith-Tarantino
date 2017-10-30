@@ -1,25 +1,16 @@
-# A Title
-Boring but descriptive or more catchy?  
-* The Tweeting Trump  
-* Trump's Twitter Fingers  
-* Analysing Trump's Tweets?  
-* WHEN SHOULD WE TRUST TRUMP'S TWEETS?
-* (WHAT'S) BEHIND TRUMP'S TWEETS?
+# Behind Trump's Tweets
 
-# Abstract
-_A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?_
 
-The core idea is to thoroughly explore rhetoric (e.g. word usage) in the Trump Twitter Archive dataset. We would like to explore the change over time and how certain events affects it. THE MAIN POINT (FOR SOCIAL GOOD) SHOULD BE HOW TO INTERPRET THESE TWEETS, AND ESTABLISH SOME GOOD AND BAD PATTERNS.
+## Abstract
+
+The core idea is to thoroughly explore rhetoric (e.g. word usage) in the Trump Twitter Archive dataset. We would like to explore the change over time and how certain events affects it. From this, as the end goal, we would like to do some social good by establishing good and bad patterns in Trump's tweets.
 
 More specifically, we want to analyze the change before and after he announced his presidential candidacy and before and after his election. In addition these long-period analytics, we would also like to explore the change in rhetoric incurred by related political scandals or major international events. Lastly, we would also like to compare Trump's rhetoric with Clinton's and Obama's.
 
-Motivation behind project?
-WE COULD SAY SOMETHING LIKE: "HE TWEETS A LOT AND EVEN MORE AFTER HIS ELECTION HE INFLUENCES A LOT OF PEOPLE WITH HIS TWEETS. WE WOULD LIKE TO DISTINGUISH PATTERNS THAT CAN LABEL A TWEET AS "GOOD" OR "BAD"
-Curiosity maybe?
+The main motivation beind this project is a facsination with how such a condensed messaging format influenecs so many people. We were curious about if we could take advandage of the brief format and find patterns and/or classify a tweet as 'good' or 'bad'.
 
 
-# Research questions
-_A list of research questions you would like to address during the project._ 
+## Research questions
 
 We would like to answer/explore the following:  
 
@@ -30,8 +21,8 @@ We would like to answer/explore the following:
 
 * Are there any change in word usage and/or rhetoric in connected to poll results?
 
-* Are there any change in word usage and/or rhetoric in connected to major events and scandals?
-  E.g. Panama Papers, Clinton e-mails, and so on.
+* Are there any change in word usage and/or rhetoric in connected to events and scandals?
+  E.g. Panama Papers, Clinton e-mails, Political victories, North Korea tensions, and so on.
 
 * Differences and similarities in word usage and rhetoric compared to other politicians, e.g. Clinton, Obama, or republican nominee opponents.
 
@@ -41,13 +32,10 @@ We would like to answer/explore the following:
 
 * When did the phrase "Fake News" arise? Explore usage frequency connection to scandals.
 
-* WHAT ARE THE PATTERNS HE USES WHEN HE TWEETS SOMETHING CLEARLY FAKE/DEFENSIVE/AGGRESSIVE/IN ORDER TO DISCREDIT SOMEONE? FREQUENCY OF THESE PATTERNS
-
-* MAIN DIFFERENCES OF USE OF LANGUAGES IN DIFFERENT SITUATIONS (E.G.: POLITICAL VICTORY, NORTH KOREA TENSIONS...)
+* What are the patterns he uses when he tweets something agressive, defensive, or to to discredit someone? Frequency of these patterns.
 
 
-# Dataset
-_List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant._
+## Datasets
 
 #### Main Dataset  
 *[Trump Twitter Archive](https://github.com/bpb27/trump_tweet_data_archive)*  
@@ -78,13 +66,12 @@ This list is not final and might grow or shrink as the project progresses.
 * List of Trump-related scandals/controvercies, [example](https://en.wikipedia.org/wiki/Category:Donald_Trump_controversies). 
 
 
-# A list of internal milestones up until project milestone 2
-_Add here a sketch of your planning for the next project milestone._
+## A list of internal milestones up until project milestone 2
 
 Open image in new tab to zoom.
 
 ![Planning for Milestone 2](images/MS2_Planning.jpg)
 
 
-# Questions for TAa
+## Questions for TAa
 _Add here some questions you have for us, in general or project-specific._
