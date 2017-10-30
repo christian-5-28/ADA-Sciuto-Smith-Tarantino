@@ -68,6 +68,37 @@ This list is not final and might grow or shrink as the project progresses.
 
 ## A list of internal milestones up until project milestone 2
 
+Week by week. Deadline is 28/11 - 2017, i.e. Tuesday week 48.
+
+
+<table style="width:80%">
+  <tr>
+    <th>Week 44</th>
+    <th>Week 45</th> 
+    <th>Week 46</th>
+    <th>Week 47</th>
+  </tr>
+  <tr>
+    <td valign="top">
+    	Explore dataset<br><br>
+    	'General' plots for different periods.
+    </td>
+    <td valign="top">
+    	Difference comparison to Obama, Clinton.<br><br>
+    	'Fake news' analysis
+    </td>
+    <td valign="top">Analysis of event, poll results, approval ratings, and scandal impact.<br><br>
+    	Reply and retweet analysis start.
+    </td>
+    <td valign="top">Pattern and good/bad tweet analysis.<br><br>
+    	Reply and retweet analysus finish.<br><br>
+    	Update README
+    </td>
+  </tr>
+</table>
+
+
+_Note: Deprecated_  
 Open image in new tab to zoom.
 
 ![Planning for Milestone 2](images/MS2_Planning.jpg)
