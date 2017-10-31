@@ -91,7 +91,7 @@ Week by week. Deadline is 28/11 - 2017, i.e. Tuesday week 48.
     	Reply and retweet analysis start.
     </td>
     <td valign="top">Pattern and good/bad tweet analysis.<br><br>
-    	Reply and retweet analysus finish.<br><br>
+    	Reply and retweet analysis completed.<br><br>
     	Update README
     </td>
   </tr>
