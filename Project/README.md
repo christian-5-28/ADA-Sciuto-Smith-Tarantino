@@ -3,7 +3,7 @@
 
 ## Abstract
 
-The core idea is to thoroughly explore rhetoric (e.g. word usage) in the Trump Twitter Archive dataset. We would like to explore the change over time and how certain events affects it. From this, as the end goal, we would like to do some social good by establishing good and bad patterns in Trump's tweets.
+The core idea is to throughly explore rhetoric (e.g. word usage) in the Trump Twitter Archive dataset. We would like to explore the change over time and how certain events affects it. From this, as the end goal, we would like to do some social good by establishing good (trustworthy) and bad (not trustworthy) patterns in Trump's tweets.
 
 More specifically, we want to analyze the change before and after he announced his presidential candidacy and before and after his election. In addition these long-period analytics, we would also like to explore the change in rhetoric incurred by related political scandals or major international events. Lastly, we would also like to compare Trump's rhetoric with Clinton's and Obama's.
 
