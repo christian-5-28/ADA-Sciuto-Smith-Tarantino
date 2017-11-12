@@ -21,13 +21,29 @@ contains a string that contains all the tweets of one year, separated by /n
 From all the condensed data, here it is created a list of strings. Every element of the list
 is a tweet
 '''
-condensed_text = [x.text.tolist() for x in condensed]
-flat_list = [item for sublist in condensed_text for item in sublist]
 
+'''
+That are not a retweet
+'''
+condensed_text = []
+for x in condensed:
+    temp = x[x.is_retweet == False]
+    # print(temp.is_retweet)
+    condensed_text.append(temp.text.tolist())
+
+# condensed_text = [x.test.tolist() for x in condensed_text]
+
+
+# GIUSTO
+# condensed_text = [x.text.tolist() for x in condensed]
+flat_list = [item for sublist in condensed_text for item in sublist]
+# print(len(flat_list))
+# 31942
 
 '''
 TFij = Nij/Dj
 IDF = log10 (D/number of documents that contain i)
+The two terms are multiplied in order to obtain the importance of the word in the document
 '''
 
 '''
@@ -39,10 +55,13 @@ words matrix is restricted to the top 1000.
 
 no_features = 1000
 
-# NMF is able to use tf-idf
+# NMF is able to use tf-idf (tf*idf)
 tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words=stopwords)
 tfidf = tfidf_vectorizer.fit_transform(flat_list)
 tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+
+# print(tfidf)
+# tfidf (document, word-feature) tfij
 
 # LDA can only use raw term counts for LDA because it is a probabilistic graphical model
 tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words='english')
@@ -63,18 +82,31 @@ for each algorithm it will all make sense. Calling the transform() method on the
 to document matrix (W).
 '''
 
-no_topics = 8
+no_topics = 7
 
 # Run NMF
 nmf_model = NMF(n_components=no_topics, random_state=1, alpha=.1, l1_ratio=.5, init='nndsvd').fit(tfidf)
 nmf_W = nmf_model.transform(tfidf)
 nmf_H = nmf_model.components_
-# print(nmf_H)
 
 # Run LDA
 lda_model = LatentDirichletAllocation(n_components=no_topics, max_iter=5, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
 lda_W = lda_model.transform(tf)
 lda_H = lda_model.components_
+
+'''
+H: every rows is a topic, every column is a word (columns length = no_features)
+Every topic contains the weight of every word about that topic.
+For this reason, if we do an inverse argsort of a topic (of a row), that returns the indices of the ordered list
+and we use those indices to extract words from feature_names, these words will be ordered from the most
+to the least important.
+
+W: every rows is a document, every column is a topic. The same concept presented above for documents and topic.
+'''
+# print(nmf_H.shape) = (7, 1000)
+# print(nmf_H)
+# print(nmf_W.shape) = (31942, 7)
+# print(nmf_W)
 
 '''
 The structure of the resulting matrices returned by both NMF and LDA is the same and the Scikit Learn interface
@@ -100,9 +132,12 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
             print(documents[doc_index])
 
 
-no_top_words = 4
-no_top_documents = 4
-display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
-display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+# no_top_words = 4
+# no_top_documents = 4
+# display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
+# display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+
+# TODO: Find a way to make the same #makeamericagreatagain and MAKE AMERICA GREAT AGAIN.
+# TODO: They finish in two different topics
 
 
