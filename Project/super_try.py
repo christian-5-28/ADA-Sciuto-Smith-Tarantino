@@ -64,7 +64,7 @@ tfidf_feature_names = tfidf_vectorizer.get_feature_names()
 # tfidf (document, word-feature) tfij
 
 # LDA can only use raw term counts for LDA because it is a probabilistic graphical model
-tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words='english')
+tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words=stopwords)
 tf = tf_vectorizer.fit_transform(flat_list)
 tf_feature_names = tf_vectorizer.get_feature_names()
 
@@ -132,10 +132,10 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
             print(documents[doc_index])
 
 
-# no_top_words = 4
-# no_top_documents = 4
-# display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
-# display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+no_top_words = 4
+no_top_documents = 4
+display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
+display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
 
 # TODO: Find a way to make the same #makeamericagreatagain and MAKE AMERICA GREAT AGAIN.
 # TODO: They finish in two different topics
