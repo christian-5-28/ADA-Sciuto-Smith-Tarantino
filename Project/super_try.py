@@ -23,11 +23,12 @@ is a tweet
 '''
 
 '''
-That are not a retweet
+That are not a retweet - and are from Android
 '''
 condensed_text = []
 for x in condensed:
     temp = x[x.is_retweet == False]
+    temp = temp[temp.source != "Twitter for iPhone"]
     # print(temp.is_retweet)
     condensed_text.append(temp.text.tolist())
 
@@ -82,12 +83,12 @@ for each algorithm it will all make sense. Calling the transform() method on the
 to document matrix (W).
 '''
 
-no_topics = 7
+no_topics = 15
 
 # Run NMF
-nmf_model = NMF(n_components=no_topics, random_state=1, alpha=.1, l1_ratio=.5, init='nndsvd').fit(tfidf)
-nmf_W = nmf_model.transform(tfidf)
-nmf_H = nmf_model.components_
+# nmf_model = NMF(n_components=no_topics, random_state=1, alpha=.1, l1_ratio=.5, init='nndsvd').fit(tfidf)
+# nmf_W = nmf_model.transform(tfidf)
+# nmf_H = nmf_model.components_
 
 # Run LDA
 lda_model = LatentDirichletAllocation(n_components=no_topics, max_iter=5, learning_method='online', learning_offset=50.,random_state=0).fit(tf)
@@ -134,10 +135,10 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
 
 no_top_words = 4
 no_top_documents = 4
-display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
+# display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
 display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
 
 # TODO: Find a way to make the same #makeamericagreatagain and MAKE AMERICA GREAT AGAIN.
-# TODO: They finish in two different topics
+# TODO: They finish in two different topics for NMF
 
 
