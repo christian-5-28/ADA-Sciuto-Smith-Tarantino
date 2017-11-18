@@ -2,8 +2,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from Project.helpers import *
 import numpy as np
 from sklearn.decomposition import NMF, LatentDirichletAllocation
+from nltk import PorterStemmer
+from nltk import word_tokenize
 
-with open('stopwords.json', 'r') as f:
+#TODO: quote http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm
+
+
+with open('stopwords_joined.json', 'r') as f:
          stopwords = json.load(f)
 
 all_data, condensed, master = load_data()
@@ -23,21 +28,39 @@ is a tweet
 '''
 
 '''
-That are not a retweet - and are from Android
+That are not a retweet - and are not from his staff -> iPhone: http://varianceexplained.org/r/trump-tweets/
 '''
 condensed_text = []
 for x in condensed:
     temp = x[x.is_retweet == False]
     temp = temp[temp.source != "Twitter for iPhone"]
-    # print(temp.is_retweet)
     condensed_text.append(temp.text.tolist())
 
-# condensed_text = [x.test.tolist() for x in condensed_text]
 
-
-# GIUSTO
-# condensed_text = [x.text.tolist() for x in condensed]
 flat_list = [item for sublist in condensed_text for item in sublist]
+
+'''
+STEMMING
+
+In order to use word_tokenize you have to type:
+import nltk
+nltk.download()
+go to model and then install punkt
+'''
+# ps = PorterStemmer()
+#
+# new_flat_list = []
+#
+# for tweet in flat_list:
+#     a = []
+#     # print(tweet + '\n\n')
+#     for w in word_tokenize(tweet):
+#         # print(w)
+#         a.append(ps.stem(w))
+#
+#     new_flat_list.append(" ".join(a))
+
+# print(len(new_flat_list))
 # print(len(flat_list))
 # 31942
 
@@ -83,7 +106,7 @@ for each algorithm it will all make sense. Calling the transform() method on the
 to document matrix (W).
 '''
 
-no_topics = 15
+no_topics = 10
 
 # Run NMF
 # nmf_model = NMF(n_components=no_topics, random_state=1, alpha=.1, l1_ratio=.5, init='nndsvd').fit(tfidf)
@@ -131,12 +154,16 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
         top_doc_indices = np.argsort(W[:, topic_idx])[::-1][0:no_top_documents]
         for doc_index in top_doc_indices:
             print(documents[doc_index])
+            print('Score: ' + str(W[doc_index, topic_idx]))
+            print('\n')
 
 
-no_top_words = 4
-no_top_documents = 4
-# display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
+no_top_words = 8
+no_top_documents = 16
 display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+
+# display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
+
 
 # TODO: Find a way to make the same #makeamericagreatagain and MAKE AMERICA GREAT AGAIN.
 # TODO: They finish in two different topics for NMF
