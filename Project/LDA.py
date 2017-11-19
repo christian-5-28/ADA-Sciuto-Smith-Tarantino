@@ -2,6 +2,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from Project.helpers import *
 import numpy as np
 from sklearn.decomposition import NMF, LatentDirichletAllocation
+import collections
 from nltk import PorterStemmer
 from nltk import word_tokenize
 
@@ -80,9 +81,9 @@ words matrix is restricted to the top 1000.
 no_features = 1000
 
 # NMF is able to use tf-idf (tf*idf)
-tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words=stopwords)
-tfidf = tfidf_vectorizer.fit_transform(flat_list)
-tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+# tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, max_features=no_features, stop_words=stopwords)
+# tfidf = tfidf_vectorizer.fit_transform(flat_list)
+# tfidf_feature_names = tfidf_vectorizer.get_feature_names()
 
 # print(tfidf)
 # tfidf (document, word-feature) tfij
@@ -106,7 +107,7 @@ for each algorithm it will all make sense. Calling the transform() method on the
 to document matrix (W).
 '''
 
-no_topics = 10
+no_topics = 8
 
 # Run NMF
 # nmf_model = NMF(n_components=no_topics, random_state=1, alpha=.1, l1_ratio=.5, init='nndsvd').fit(tfidf)
@@ -159,13 +160,250 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
 
 
 no_top_words = 8
-no_top_documents = 16
-display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+no_top_documents = 20
+# display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
 
 # display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
 
+'''
+Topics:
+0: POLITICS
+1: HOTELS AND GOLF
+2: POLITICS
+3: CELEBRITY APPRENTICE AND SHOWS
+4: BOOKS, YANKEES, VARIOUS
+5: GOLF, TRUMP'S BUSINESSES
+6: QUOTATIONS, VARIOUS
+7: INTERVIEWS, DEBATES
 
-# TODO: Find a way to make the same #makeamericagreatagain and MAKE AMERICA GREAT AGAIN.
-# TODO: They finish in two different topics for NMF
+First I'd put together topics 1-5 in TRUMP BUSINESS CATEGORY
+Second I'd put together 4 - 6 in VARIOUS CATEGORY
 
+Third, the idea is to put together the best documents from 0 and 2 (score > 75%)
+and divide this topic in other topics.
+
+'''
+
+'''
+Putting together 0-2:
+This new topic will contain EVERYTHING THAT REFERS TO POLITICS.
+
+Putting together 1-5:
+This new topic will contain GOLF, HOTELS, COLOGNE, Trump Signature Collection.
+
+Putting together 4-6:
+This new topic will contain GENERAL TWEETS, BOOKS, SOME QUOTATIONS, ... .
+
+'''
+business = []
+scores_business = []
+various = []
+scores_various = []
+politics = []
+scores_politics = []
+shows = []
+scores_shows = []
+interviews = []
+scores_interviews = []
+
+for topic_idx, topic in enumerate(lda_H):
+
+    # Taking the indices of the documents ordered by importance in the topic
+    top_doc_indices_ordered = np.argsort(lda_W[:, topic_idx])[::-1]
+
+    for doc_index in top_doc_indices_ordered:
+        score = lda_W[doc_index, topic_idx]
+
+        # If the documents are less important than 0.60, I finish collecting documents for that topic
+        if (score < 0.60):
+            break
+
+        # BUSINESS - score no less than 0.6
+        if topic_idx == 1 or topic_idx == 5:
+
+            business.append(flat_list[doc_index])
+            scores_business.append(score)
+
+        # VARIOUS - score can be 0.5
+        elif topic_idx == 4 or topic_idx == 6:
+
+            various.append(flat_list[doc_index])
+            scores_various.append(score)
+
+        # POLITICS - score no less than 0.6
+        elif topic_idx == 0 or topic_idx == 2:
+            politics.append(flat_list[doc_index])
+            scores_politics.append(score)
+
+        # CELEBRITY APPRENTICE AND SHOWS - score no less than 0.6
+        elif topic_idx == 3:
+
+            shows.append(flat_list[doc_index])
+            scores_shows.append(score)
+
+        # INTERVIEWS AND DEBATES - score no less than 0.6
+        elif topic_idx == 7:
+
+            interviews.append(flat_list[doc_index])
+            scores_interviews.append(score)
+
+'''PRINT BUSINESS TOPIC'''
+# scores_business_idx_ordered = np.argsort(scores_business)[::-1]
+# print("NEW TOPIC: BUSINESS")
+# for index in scores_business_idx_ordered:
+#     print(business[index])
+#     print(scores_business[index])
+#     print()
+
+'''PRINT VARIOUS TOPIC'''
+# scores_various_idx_ordered = np.argsort(scores_various)[::-1]
+# print("NEW TOPIC: VARIOUS ")
+# for index in scores_various_idx_ordered:
+#     print(various[index])
+#     print(scores_various[index])
+#     print()
+
+'''PRINT POLITICS TOPIC'''
+# scores_politcs_idx_ordered = np.argsort(scores_politics)[::-1]
+# print("NEW TOPIC: VARIOUS ")
+# for index in scores_politcs_idx_ordered:
+#     print(politics[index])
+#     print(scores_politics[index])
+#     print()
+
+# Arrivato a controllare qua : 0.769558751189
+
+'''PRINT SHOWS TOPIC'''
+# scores_shows_idx_ordered = np.argsort(scores_shows)[::-1]
+# print("NEW TOPIC: SHOWS ")
+# for index in scores_shows_idx_ordered:
+#     print(shows[index])
+#     print(scores_shows[index])
+#     print()
+
+'''PRINT INTERVIEWS AND DEBATES TOPIC'''
+# scores_interviews_idx_ordered = np.argsort(scores_interviews)[::-1]
+# print("NEW TOPIC: INTERVIEWS AND DEBATES ")
+# for index in scores_interviews_idx_ordered:
+#     print(interviews[index])
+#     print(scores_interviews[index])
+#     print()
+
+
+# print(len(politics))
+# print(len(business))
+# print(len(various))
+# print(len(shows))
+# print(len(interviews))
+
+
+'''
+In Politics Topic hillary appears only 15 times, probably the topic detection didn't count her.
+For this reason we will use a function to retrieve her tweets
+'''
+
+hillary_topic = get_hillary_tweets_16_17(all_data)
+
+# Removing the tweets in politics that contain hillary, because we are going to add every tweet that refers to hillary
+# later and we don't want to have duplicates
+for tweet in list(politics):
+    if ('hillary' in tweet) or ('clinton' in tweet) or ('Hillary' in tweet) or ('Clinton' in tweet):
+        politics.remove(tweet)
+
+
+'''
+Searching for keywords inside the politics tweets in order to get more specific topics
+'''
+
+china_keywords = ['china', "China", 'Chinese']
+obama_keywords = ['Obama', 'obama', '@BarackObama', 'Obamacare', 'obamacare', '#Obamacare', 'OBAMACARE']
+hillary_keywords = ['hillary', 'clinton', 'Hillary', 'Clinton', 'Crooked', 'crooked']
+foreign_politics_keywords = ['iran', 'Iran', 'Iraq', 'iraq', 'oil', 'Oil', 'nuclear', 'gas', 'Lybia', 'ebola',
+                             'Ebola', 'Japan', 'foreign', 'trade', 'Saudi Arabia', '#IranDeal', 'Greece',
+                             'Middle East', 'OPEC', 'terrorists', 'terrorist',  'ISIS', 'isis', '#isis', '#ebola',
+                             'Afghanistan', 'Russia', 'russia', 'Snowden', 'nations', 'Georgia',
+                             'military spending', 'Pakistan', 'Bin Laden', 'N.A.T.O', 'Assad', 'Libya',
+                             'Solders', 'Soldiers', 'soldiers' 'weapon', 'weapons', 'Al Qaeda', 'Putin', 'military',
+                             'Mexico', 'Europe', 'South Korea', 'military', 'Canada', 'Mubarak', 'Islamists',
+                             'TERRORISTS', 'OIL', 'Afghan'] # + russia, china
+internal_politics_keywords = ['Government', 'government', 'govt.', 'Washington', 'republicans', 'Republicans', 'Repubs',
+                              'Democrats', 'democrats', 'tax', 'taxes', 'debt', 'jobs', 'job', 'borders', 'border',
+                              'Wall Street', 'deficit', 'immigrants', 'employment', 'unemployment', 'deficits',
+                              'deficit', 'taxing', 'Senate', 'Senator', 'senate', 'senator', 'our country',
+                              'Congress', '@whitehouse', 'Taxpayer', 'Our whole country', 'officials',
+                              'Medicare', 'minority', 'death penalty', 'infrastructure', 'House', 'Fiscal',
+                              'military spending', 'Social Security', 'Medicare', 'Weak leaders',
+                              'Cruz', 'leadership', 'citizen', 'economic', 'our great country', 'political', 'Pentagon',
+                              'candidate', 'Fed', 'Amendment', '#TedCruz', 'defense cuts', 'drug abuse',
+                              'food stamps', 'Jimmy Carter', 'guns are outlawed', 'candidate', 'Parties', 'Reagan',
+                              'Chafee', 'Insurance', 'civil liberties', 'Federal Court', 'Supreme Court', 'CIA',
+                              'lobbyists'] # + obama + hillary
+trump_keywords = ['@realDonaldTrump', 'Trump', 'trump', 'Donald', 'Jeb', 'Bush', '#Trump',
+                  'MAKE AMERICA GREAT AGAIN', 'Make America Great Again', '#TimeToGetTough', 'Trumpative',
+                  '#DonaldTrump', 'TRUMP', 'I will', 'VICTORY', 'no other leader', 'DONALD', 'DONALD TRUMP',
+                  'TRUMP 2016', 'Making America Great Again', 'H-1B reform', 'MR.TRUMP For President', 'total pro',
+                  'rallies', 'run for president', 'running for President', '#MakeAmericaGreatAgain',
+                  'Big speech', 'great wall']
+
+
+
+china_topic = []
+obama_topic = []
+foreign_politics_topic = []
+internal_politics_topic = []
+trump_4pre_topic = []
+not_got = []
+for tweet in politics:
+
+    control = 0
+
+    for keyword in china_keywords:
+        if keyword in tweet:
+            china_topic.append(tweet)
+            control += 1
+            break
+
+    for keyword in obama_keywords:
+        if keyword in tweet:
+            obama_topic.append(tweet)
+            control += 1
+            break
+
+    for keyword in foreign_politics_keywords:
+        if keyword in tweet:
+            foreign_politics_topic.append(tweet)
+            control += 1
+            break
+
+    for keyword in internal_politics_keywords:
+        if keyword in tweet:
+            internal_politics_topic.append(tweet)
+            control += 1
+            break
+
+    for keyword in trump_keywords:
+        if keyword in tweet:
+            trump_4pre_topic.append(tweet)
+            control += 1
+            break
+
+    if control == 0:
+        not_got.append(tweet)
+
+politics += hillary_topic
+
+'''
+That's how we we will count the most common word in a topic
+'''
+#TODO: add a second stopword file for punctuation
+words_in_topic = []
+for tweet in china_topic:
+    words = word_tokenize(tweet)
+    for word in list(words):
+        if word in stopwords:
+            words.remove(word)
+    words_in_topic += words
+
+counter = collections.Counter(words_in_topic)
+print(counter.most_common())
 

@@ -36,6 +36,45 @@ def load_data():
     return all_data, condensed, master
 
 
+def get_hillary_tweets_16_17(all_data):
+    '''Retrieving tweets concernig hillary from 2016 and 2017'''
+
+    # TOTAL
+    # TOTAL HILLARY = 962
+    # FROM 2016 - 2017 = 698
+
+    # NO IPHONE
+    # TOTAL HILLARY = 669
+    # FROM 2016 - 2017 = 415
+
+    # FROM POLITICS = 15!!!
+
+    condensed_2016 = all_data['condensed_2016']
+    condensed_2017 = all_data['condensed_2017']
+    condensed = []
+    condensed.append(condensed_2016)
+    condensed.append(condensed_2017)
+
+    condensed_text = []
+    for x in condensed:
+        temp = x[x.is_retweet == False]
+        temp = temp[temp.source != "Twitter for iPhone"]
+        condensed_text.append(temp.text.tolist())
+
+    flat_list = [item for sublist in condensed_text for item in sublist]
+
+    tweets = []
+    for tweet in flat_list:
+        if ('hillary' in tweet) or ('clinton' in tweet) or ('Hillary' in tweet) or ('Clinton' in tweet) \
+                or ('Crooked' in tweet) or ('crooked' in tweet):
+
+            tweets.append(tweet)
+    return tweets
+
+
+
+
+
 def create_term_document_matrix(terms, documents):
     """
     Constructs a sparse matrix which contains n at r,c if term r is in document c n times
