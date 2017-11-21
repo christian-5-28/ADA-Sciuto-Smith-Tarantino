@@ -1,5 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from Project.helpers import *
+from helpers import *
 import numpy as np
 from sklearn.decomposition import NMF, LatentDirichletAllocation
 from nltk import PorterStemmer
