@@ -9,6 +9,22 @@ from scipy.sparse.linalg import svds
 import math
 
 
+def load_lexicons():
+
+    lexicons = pd.read_table('lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt', sep='\t',
+                             names=('term', 'emotion', 'value'))
+
+    terms = lexicons.term
+
+    emotions = lexicons.drop('term', axis=1).pivot(columns='emotion', values='value')
+    emotions['term'] = terms
+    emotions.fillna(0, inplace=True)
+    emotions = emotions.groupby('term').sum()
+    emotions.reset_index(inplace=True)
+
+    return emotions
+
+
 def load_data():
     """
     Loading all the data in one dictionary and two lists: condensed and master and returning them.
@@ -34,6 +50,100 @@ def load_data():
             condensed.append(file)
 
     return all_data, condensed, master
+
+
+def get_hillary_tweets_16_17(all_data):
+    '''Retrieving tweets concernig hillary from 2016 and 2017'''
+
+    # TOTAL
+    # TOTAL HILLARY = 962
+    # FROM 2016 - 2017 = 698
+
+    # NO IPHONE
+    # TOTAL HILLARY = 669
+    # FROM 2016 - 2017 = 415
+
+    # FROM POLITICS = 15!!!
+
+    condensed_2016 = all_data['condensed_2016']
+    condensed_2017 = all_data['condensed_2017']
+    condensed = []
+    condensed.append(condensed_2016)
+    condensed.append(condensed_2017)
+
+    condensed_text = []
+    condensed_date = []
+    condensed_retweet_count = []
+    condensed_favorite_count = []
+    condensed_id = []
+    for x in condensed:
+        temp = x[x.is_retweet == False]
+        temp = temp[temp.source != "Twitter for iPhone"]
+        condensed_text.append(temp.text.tolist())
+        condensed_date.append(temp.created_at.tolist())
+        condensed_retweet_count.append(temp.retweet_count.tolist())
+        condensed_favorite_count.append(temp.favorite_count.tolist())
+        condensed_id.append(temp.id_str.tolist())
+
+    flat_list = [item for sublist in condensed_text for item in sublist]
+    flat_list_date = [item for sublist in condensed_date for item in sublist]
+    flat_list_retweet_count = [item for sublist in condensed_retweet_count for item in sublist]
+    flat_list_favorite_count = [item for sublist in condensed_favorite_count for item in sublist]
+    flat_list_id = [item for sublist in condensed_id for item in sublist]
+
+    tweets = []
+    flat_list_info = []
+    for tweet, date, ret, fav, id_ in zip(flat_list, flat_list_date, flat_list_retweet_count, flat_list_favorite_count, flat_list_id):
+        if ('hillary' in tweet) or ('clinton' in tweet) or ('Hillary' in tweet) or ('Clinton' in tweet) \
+                or ('Crooked' in tweet) or ('crooked' in tweet):
+
+            tweets.append(tweet)
+            flat_list_info.append((date, ret, fav, id_))
+
+    return tweets, flat_list_info
+
+
+def topic_to_json(topic, json_list, flat_list_info, topic_str):
+    for tweet in topic:
+        date, ret, fav, id_ = flat_list_info[tweet[1]]
+
+        json = {
+            'created_at': str(date),
+            'id': id_,
+            'retweet_count': ret,
+            'favorite_count': fav,
+            'text': tweet[0],
+            'topic': topic_str
+        }
+
+        json_list.append(json)
+
+
+def topic_to_json_hillary(hillary_topic, hillary_json, hillary_info, internal=False):
+    for index, tweet in enumerate(hillary_topic):
+        date, ret, fav, id_ = hillary_info[index]
+
+        if not internal:
+            json = {
+                'created_at': str(date),
+                'id': id_,
+                'retweet_count': ret,
+                'favorite_count': fav,
+                'text': tweet,
+                'topic': 'hillary'
+            }
+
+        else:
+            json = {
+                'created_at': str(date),
+                'id': id_,
+                'retweet_count': ret,
+                'favorite_count': fav,
+                'text': tweet,
+                'topic': 'internal_politics'
+            }
+
+        hillary_json.append(json)
 
 
 def create_term_document_matrix(terms, documents):
