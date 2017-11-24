@@ -530,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511382975231</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="typos">
+      <created>1511383347418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511383347418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -579,7 +586,8 @@
     <MESSAGE value="topic detection concluded" />
     <MESSAGE value="add plot to task 2 homework 4" />
     <MESSAGE value="data path fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="data path fixed" />
+    <MESSAGE value="typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="typos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
