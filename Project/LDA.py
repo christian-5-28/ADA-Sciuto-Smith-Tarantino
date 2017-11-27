@@ -1,5 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from helpers import *
+from Project.helpers import *
 import numpy as np
 from sklearn.decomposition import NMF, LatentDirichletAllocation
 import json
@@ -10,7 +10,7 @@ from nltk import word_tokenize
 #TODO: quote http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm
 
 
-with open('stopwords_joined.json', 'r') as f:
+with open('stopwords/stopwords_joined.json', 'r') as f:
          stopwords = json.load(f)
 
 all_data, condensed, master = load_data()
@@ -180,7 +180,8 @@ def display_topics(H, W, feature_names, documents, no_top_words, no_top_document
 
 no_top_words = 8
 no_top_documents = 20
-# display_topics(lda_H, lda_W, tf_feature_names, flat_list, no_top_words, no_top_documents)
+display_topics(lda_H, lda_W, tf_feature_names, flat_list_text, no_top_words, no_top_documents)
+print(len(tf_feature_names))
 
 # display_topics(nmf_H, nmf_W, tfidf_feature_names, flat_list, no_top_words, no_top_documents)
 
@@ -288,7 +289,7 @@ for topic_idx, topic in enumerate(lda_H):
 
 '''PRINT POLITICS TOPIC'''
 # scores_politcs_idx_ordered = np.argsort(scores_politics)[::-1]
-# print("NEW TOPIC: VARIOUS ")
+# print("NEW TOPIC: POLITICS ")
 # for index in scores_politcs_idx_ordered:
 #     print(politics[index])
 #     print(scores_politics[index])
@@ -370,7 +371,23 @@ trump_keywords = ['@realDonaldTrump', 'Trump', 'trump', 'Donald', 'Jeb', 'Bush',
                   'rallies', 'run for president', 'running for President', '#MakeAmericaGreatAgain',
                   'Big speech', 'great wall']
 
+with open('keywords/china_keywords.json', 'w') as fp:
+    json.dump(china_keywords, fp)
 
+with open('keywords/obama_keywords.json', 'w') as fp:
+    json.dump(obama_keywords, fp)
+
+with open('keywords/hillary_keywords.json', 'w') as fp:
+    json.dump(hillary_keywords, fp)
+
+with open('keywords/foreign_politics_keywords.json', 'w') as fp:
+    json.dump(foreign_politics_keywords, fp)
+
+with open('keywords/internal_politics_keywords.json', 'w') as fp:
+    json.dump(internal_politics_keywords, fp)
+
+with open('keywords/trump_keywords.json', 'w') as fp:
+    json.dump(trump_keywords, fp)
 
 china_topic = []
 obama_topic = []
@@ -461,46 +478,46 @@ for tweet in politics:
 '''
 TO JSON
 '''
-business_json = []
-various_json = []
-shows_json = []
-interviews_json = []
-hillary_json = []
-
-
-topic_to_json(business, business_json, flat_list_info, 'business')
-topic_to_json(various, various_json, flat_list_info, 'various')
-topic_to_json(shows, shows_json, flat_list_info, 'shows')
-topic_to_json(interviews, interviews_json, flat_list_info, 'interviews_debates')
-topic_to_json_hillary(hillary_topic, hillary_json, hillary_info)
-topic_to_json_hillary(hillary_topic, internal_politics_json, hillary_info, internal=True) # internal + hillary
-
-with open('topic_tweets/business.json', 'w') as fp:
-    json.dump(business_json, fp)
-
-with open('topic_tweets/various.json', 'w') as fp:
-    json.dump(various_json, fp)
-
-with open('topic_tweets/shows.json', 'w') as fp:
-    json.dump(shows_json, fp)
-
-with open('topic_tweets/interviews.json', 'w') as fp:
-    json.dump(interviews_json, fp)
-
-with open('topic_tweets/hillary.json', 'w') as fp:
-    json.dump(hillary_json, fp)
-
-with open('topic_tweets/china.json', 'w') as fp:
-    json.dump(china_json, fp)
-
-with open('topic_tweets/obama.json', 'w') as fp:
-    json.dump(obama_json, fp)
-
-with open('topic_tweets/foreign_politics.json', 'w') as fp:
-    json.dump(foreign_politics_json, fp)
-
-with open('topic_tweets/internal_politics.json', 'w') as fp:
-    json.dump(internal_politics_json, fp)
+# business_json = []
+# various_json = []
+# shows_json = []
+# interviews_json = []
+# hillary_json = []
+#
+#
+# topic_to_json(business, business_json, flat_list_info, 'business')
+# topic_to_json(various, various_json, flat_list_info, 'various')
+# topic_to_json(shows, shows_json, flat_list_info, 'shows')
+# topic_to_json(interviews, interviews_json, flat_list_info, 'interviews_debates')
+# topic_to_json_hillary(hillary_topic, hillary_json, hillary_info)
+# topic_to_json_hillary(hillary_topic, internal_politics_json, hillary_info, internal=True) # internal + hillary
+#
+# with open('topic_tweets/business.json', 'w') as fp:
+#     json.dump(business_json, fp)
+#
+# with open('topic_tweets/various.json', 'w') as fp:
+#     json.dump(various_json, fp)
+#
+# with open('topic_tweets/shows.json', 'w') as fp:
+#     json.dump(shows_json, fp)
+#
+# with open('topic_tweets/interviews.json', 'w') as fp:
+#     json.dump(interviews_json, fp)
+#
+# with open('topic_tweets/hillary.json', 'w') as fp:
+#     json.dump(hillary_json, fp)
+#
+# with open('topic_tweets/china.json', 'w') as fp:
+#     json.dump(china_json, fp)
+#
+# with open('topic_tweets/obama.json', 'w') as fp:
+#     json.dump(obama_json, fp)
+#
+# with open('topic_tweets/foreign_politics.json', 'w') as fp:
+#     json.dump(foreign_politics_json, fp)
+#
+# with open('topic_tweets/internal_politics.json', 'w') as fp:
+#     json.dump(internal_politics_json, fp)
 
 
 

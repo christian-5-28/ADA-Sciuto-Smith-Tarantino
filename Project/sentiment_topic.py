@@ -3,7 +3,7 @@ import pandas as pd
 
 lexicons = load_lexicons()
 
-print(lexicons.head())
+# print(lexicons.head())
 
 '''Loading files'''
 dir_path = 'topic_tweets'
@@ -13,17 +13,17 @@ first = True
 tweets = pd.DataFrame()
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
+    print(filename)
+    if filename == '.DS_Store':
+        continue
     if first:
         tweets = pd.read_json(dir_path + '/' + filename)
         first = False
     else:
-        tweets.append(pd.read_json(dir_path + '/' + filename))
-
-
+        tweets = tweets.append(pd.read_json(dir_path + '/' + filename))
+    print(tweets.shape)
 
 length = lexicons.shape[0]
-
-# tweets = pd.read_json('topic_tweets/china.json')
 
 tweets['anger'] = 0
 tweets['anticipation'] = 0
@@ -35,10 +35,6 @@ tweets['positive'] = 0
 tweets['sadness'] = 0
 tweets['surprise'] = 0
 tweets['trust'] = 0
-
-print('\nCHINA')
-
-print(tweets.head())
 
 for index, lexicon in lexicons.iterrows():
     print('Iterations to the end: %s...' % (length - index))
@@ -55,6 +51,12 @@ for index, lexicon in lexicons.iterrows():
             if value != 0: # faster
                 tweets.loc[tweets_with_lexicon, attribute] += value
 
-print('\nCHINA AND EMOTIONS')
 
+print('HEAD\n')
 print(tweets.head())
+print('TAIL\n')
+print(tweets.tail())
+# tweets.to_csv('tweet_topic_emotions/tweets_topic_em.csv')
+
+tweets_topic_em = pd.read_csv('tweet_topic_emotions/tweets_topic_em.csv', index_col=0)
+print(tweets_topic_em.shape)
