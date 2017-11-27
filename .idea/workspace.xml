@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords_wordcount.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/NRC-color-lexicon-senselevel-v0.92.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-pairs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-Senselevel-v0.92.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-v0.92-InManyLanguages.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/NRC-Hashtag-Emotion-Lexicon-v0.2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-pairs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/sentiment-hashtags.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/LDA.py" afterPath="$PROJECT_DIR$/Project/LDA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Lorenzo.ipynb" afterPath="$PROJECT_DIR$/Project/Lorenzo.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/sentiment_topic.py" afterPath="$PROJECT_DIR$/Project/sentiment_topic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" afterPath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -604,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511799099992</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleaned folders, hillary out of internal politics">
+      <created>1511803510572</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511803510572</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -654,7 +634,8 @@
     <MESSAGE value="add plot to task 2 homework 4" />
     <MESSAGE value="data path fixed" />
     <MESSAGE value="typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="typos" />
+    <MESSAGE value="cleaned folders, hillary out of internal politics" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned folders, hillary out of internal politics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
