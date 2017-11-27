@@ -371,23 +371,23 @@ trump_keywords = ['@realDonaldTrump', 'Trump', 'trump', 'Donald', 'Jeb', 'Bush',
                   'rallies', 'run for president', 'running for President', '#MakeAmericaGreatAgain',
                   'Big speech', 'great wall']
 
-with open('keywords/china_keywords.json', 'w') as fp:
-    json.dump(china_keywords, fp)
-
-with open('keywords/obama_keywords.json', 'w') as fp:
-    json.dump(obama_keywords, fp)
-
-with open('keywords/hillary_keywords.json', 'w') as fp:
-    json.dump(hillary_keywords, fp)
-
-with open('keywords/foreign_politics_keywords.json', 'w') as fp:
-    json.dump(foreign_politics_keywords, fp)
-
-with open('keywords/internal_politics_keywords.json', 'w') as fp:
-    json.dump(internal_politics_keywords, fp)
-
-with open('keywords/trump_keywords.json', 'w') as fp:
-    json.dump(trump_keywords, fp)
+# with open('keywords/china_keywords.json', 'w') as fp:
+#     json.dump(china_keywords, fp)
+#
+# with open('keywords/obama_keywords.json', 'w') as fp:
+#     json.dump(obama_keywords, fp)
+#
+# with open('keywords/hillary_keywords.json', 'w') as fp:
+#     json.dump(hillary_keywords, fp)
+#
+# with open('keywords/foreign_politics_keywords.json', 'w') as fp:
+#     json.dump(foreign_politics_keywords, fp)
+#
+# with open('keywords/internal_politics_keywords.json', 'w') as fp:
+#     json.dump(internal_politics_keywords, fp)
+#
+# with open('keywords/trump_keywords.json', 'w') as fp:
+#     json.dump(trump_keywords, fp)
 
 china_topic = []
 obama_topic = []
@@ -478,46 +478,46 @@ for tweet in politics:
 '''
 TO JSON
 '''
-# business_json = []
-# various_json = []
-# shows_json = []
-# interviews_json = []
-# hillary_json = []
-#
-#
-# topic_to_json(business, business_json, flat_list_info, 'business')
-# topic_to_json(various, various_json, flat_list_info, 'various')
-# topic_to_json(shows, shows_json, flat_list_info, 'shows')
-# topic_to_json(interviews, interviews_json, flat_list_info, 'interviews_debates')
-# topic_to_json_hillary(hillary_topic, hillary_json, hillary_info)
+business_json = []
+various_json = []
+shows_json = []
+interviews_json = []
+hillary_json = []
+
+
+topic_to_json(business, business_json, flat_list_info, 'business')
+topic_to_json(various, various_json, flat_list_info, 'various')
+topic_to_json(shows, shows_json, flat_list_info, 'shows')
+topic_to_json(interviews, interviews_json, flat_list_info, 'interviews_debates')
+topic_to_json_hillary(hillary_topic, hillary_json, hillary_info)
 # topic_to_json_hillary(hillary_topic, internal_politics_json, hillary_info, internal=True) # internal + hillary
-#
-# with open('topic_tweets/business.json', 'w') as fp:
-#     json.dump(business_json, fp)
-#
-# with open('topic_tweets/various.json', 'w') as fp:
-#     json.dump(various_json, fp)
-#
-# with open('topic_tweets/shows.json', 'w') as fp:
-#     json.dump(shows_json, fp)
-#
-# with open('topic_tweets/interviews.json', 'w') as fp:
-#     json.dump(interviews_json, fp)
-#
-# with open('topic_tweets/hillary.json', 'w') as fp:
-#     json.dump(hillary_json, fp)
-#
-# with open('topic_tweets/china.json', 'w') as fp:
-#     json.dump(china_json, fp)
-#
-# with open('topic_tweets/obama.json', 'w') as fp:
-#     json.dump(obama_json, fp)
-#
-# with open('topic_tweets/foreign_politics.json', 'w') as fp:
-#     json.dump(foreign_politics_json, fp)
-#
-# with open('topic_tweets/internal_politics.json', 'w') as fp:
-#     json.dump(internal_politics_json, fp)
+
+with open('topic_tweets/business.json', 'w') as fp:
+    json.dump(business_json, fp)
+
+with open('topic_tweets/various.json', 'w') as fp:
+    json.dump(various_json, fp)
+
+with open('topic_tweets/shows.json', 'w') as fp:
+    json.dump(shows_json, fp)
+
+with open('topic_tweets/interviews.json', 'w') as fp:
+    json.dump(interviews_json, fp)
+
+with open('topic_tweets/hillary.json', 'w') as fp:
+    json.dump(hillary_json, fp)
+
+with open('topic_tweets/china.json', 'w') as fp:
+    json.dump(china_json, fp)
+
+with open('topic_tweets/obama.json', 'w') as fp:
+    json.dump(obama_json, fp)
+
+with open('topic_tweets/foreign_politics.json', 'w') as fp:
+    json.dump(foreign_politics_json, fp)
+
+with open('topic_tweets/internal_politics.json', 'w') as fp:
+    json.dump(internal_politics_json, fp)
 
 
 
