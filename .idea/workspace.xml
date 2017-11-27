@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/Lorenzo.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/china_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/foreign_politics_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/hillary_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/internal_politics_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/obama_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/keywords/trump_keywords.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/sentiment_every_tweet.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_usage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/word_usage_per_topic.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/load_lexicons.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/read_json.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/get_stopwords.py" afterPath="$PROJECT_DIR$/Project/get_stopwords_from_html.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/stopwords.json" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/stopwords_2.json" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords_2.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/stopwords_joined.json" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords_joined.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/LDA.py" afterPath="$PROJECT_DIR$/Project/LDA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/sentiment_topic.py" afterPath="$PROJECT_DIR$/Project/sentiment_topic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/notebooks/fake_news_notebook.ipynb" afterPath="$PROJECT_DIR$/Project/notebooks/fake_news_notebook.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +37,8 @@
       <file leaf-file-name="fake_news.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="1265">
+              <caret line="90" column="59" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -516,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511800417792</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1511800526382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511800526382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -568,7 +559,8 @@
     <MESSAGE value="typos" />
     <MESSAGE value="typos.." />
     <MESSAGE value="fake news notebook structure added" />
-    <option name="LAST_COMMIT_MESSAGE" value="fake news notebook structure added" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -580,6 +572,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="42" column="96" lean-forward="false" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -604,6 +599,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
           <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -628,6 +626,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,6 +653,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,6 +798,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,6 +808,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,8 +848,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="1265">
+          <caret line="90" column="59" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
