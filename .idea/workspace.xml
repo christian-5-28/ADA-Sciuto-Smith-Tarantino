@@ -1,59 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/both_tweets_and_emotion_on_all2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/business_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/china_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/foreign_politics_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/hillary_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/internal_politics_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/interviews_debates_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/obama_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/shows_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/topic_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_topic_em.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_topic_keyemotions.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/various_word_usage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords_wordcount.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/business.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/china.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/foreign_politics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/hillary.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/internal_politics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/interviews.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/obama.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/shows.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/various.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/NRC-color-lexicon-senselevel-v0.92.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-pairs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-Senselevel-v0.92.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-v0.92-InManyLanguages.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/NRC-Hashtag-Emotion-Lexicon-v0.2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-bigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-pairs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-unigrams.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/sentiment-hashtags.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-bigrams.txt" afterPath="$PROJECT_DIR$/Project/data/both_tweets_and_emotion_on_all.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" afterPath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/LDA.py" afterPath="$PROJECT_DIR$/Project/LDA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Lorenzo.ipynb" afterPath="$PROJECT_DIR$/Project/Lorenzo.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/sentiment_topic.py" afterPath="$PROJECT_DIR$/Project/sentiment_topic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" afterPath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" />
+    <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/notebooks/fake_news_notebook.ipynb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +37,8 @@
       <file leaf-file-name="fake_news.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
+            <state relative-caret-position="391">
+              <caret line="147" column="48" lean-forward="true" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -99,8 +49,8 @@
       <file leaf-file-name="fact_checker_scraper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/fact_checker_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1495">
-              <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            <state relative-caret-position="1600">
+              <caret line="93" column="45" lean-forward="false" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -557,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511800526382</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1511823398834</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511823398834</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -571,8 +528,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -622,6 +580,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="42" column="96" lean-forward="false" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,6 +607,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
           <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,6 +634,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,6 +661,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,6 +794,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -831,6 +804,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#76#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fact_checker_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1495">
-          <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        <state relative-caret-position="1600">
+          <caret line="93" column="45" lean-forward="false" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -868,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="147" column="48" lean-forward="true" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
