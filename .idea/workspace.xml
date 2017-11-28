@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="fake news notebook structure added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/business.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/china.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/foreign_politics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/hillary.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/internal_politics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/interviews.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/obama.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/shows.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/various.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" afterPath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +37,8 @@
       <file leaf-file-name="fake_news.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="389">
+              <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -528,7 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511800417792</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixing folders">
+      <created>1511803609775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511803609775</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed hillary everywhere">
+      <created>1511804494401</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511804494401</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -580,7 +583,9 @@
     <MESSAGE value="typos" />
     <MESSAGE value="typos.." />
     <MESSAGE value="fake news notebook structure added" />
-    <option name="LAST_COMMIT_MESSAGE" value="fake news notebook structure added" />
+    <MESSAGE value="fixing folders" />
+    <MESSAGE value="fixed hillary everywhere" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed hillary everywhere" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -832,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="389">
+          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
