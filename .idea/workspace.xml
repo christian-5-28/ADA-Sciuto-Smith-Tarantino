@@ -2,7 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a03d1b3-9bad-4ce8-8c76-c69fc32bcd6e" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/both_tweets_and_emotion_on_all2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/business_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/china_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/foreign_politics_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/hillary_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/internal_politics_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/interviews_debates_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/obama_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/shows_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/topic_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_topic_em.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_topic_keyemotions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/tweets_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/data/various_word_usage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/stopwords/stopwords_wordcount.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/business.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/china.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/foreign_politics.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/hillary.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/internal_politics.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/interviews.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/obama.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/shows.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/topic_tweets_hillary_included/various.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/NRC-color-lexicon-senselevel-v0.92.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Colour-Lexicon-v0.92/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/Emoticon-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-AffLexNegLex-v1.0/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-pairs.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-unigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-Senselevel-v0.92.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/NRC-Emotion-Lexicon-v0.92-InManyLanguages.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emotion-Lexicon-v0.92/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/NRC-Hashtag-Emotion-Lexicon-v0.2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Emotion-Lexicon-v0.2/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-bigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/HS-AFFLEX-NEGLEX-unigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-AffLexNegLex-v1.0/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-bigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-pairs.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/HS-unigrams.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Hashtag-Sentiment-Lexicon-v1.0/sentiment-hashtags.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/lexicons/NRC-Emoticon-Lexicon-v1.0/Emoticon-bigrams.txt" afterPath="$PROJECT_DIR$/Project/data/both_tweets_and_emotion_on_all.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" afterPath="$PROJECT_DIR$/.idea/ADA-Sciuto-Smith-Tarantino.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/LDA.py" afterPath="$PROJECT_DIR$/Project/LDA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Lorenzo.ipynb" afterPath="$PROJECT_DIR$/Project/Lorenzo.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/sentiment_topic.py" afterPath="$PROJECT_DIR$/Project/sentiment_topic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" afterPath="$PROJECT_DIR$/Project/topic_tweets/internal_politics.json" />
+>>>>>>> 3355dddeb335dca024dc4a2024e88f64bf828db5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,21 +68,20 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$tryPlot.coverage" NAME="tryPlot Coverage Results" MODIFIED="1510855049939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$read_json.coverage" NAME="read_json Coverage Results" MODIFIED="1509917706547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$load_lexicons.coverage" NAME="load_lexicons Coverage Results" MODIFIED="1510785308980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$hillary_tweets.coverage" NAME="hillary_tweets Coverage Results" MODIFIED="1511116710676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
-    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$read_json.coverage" NAME="read_json Coverage Results" MODIFIED="1509917706547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$sentiment_topic.coverage" NAME="sentiment_topic Coverage Results" MODIFIED="1511268383623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
-    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$get_stopwords.coverage" NAME="get_stopwords Coverage Results" MODIFIED="1510878559233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
-    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$super_try.coverage" NAME="super_try Coverage Results" MODIFIED="1510878571767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$LDA.coverage" NAME="LDA Coverage Results" MODIFIED="1511268310122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$super_try.coverage" NAME="super_try Coverage Results" MODIFIED="1510878571767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/ADA_Sciuto_Smith_Tarantino$get_stopwords.coverage" NAME="get_stopwords Coverage Results" MODIFIED="1510878559233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="46">
               <caret line="2" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
@@ -37,8 +91,13 @@
       <file leaf-file-name="fake_news.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="389">
               <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+=======
+            <state relative-caret-position="852">
+              <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
+>>>>>>> 3355dddeb335dca024dc4a2024e88f64bf828db5
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -49,7 +108,7 @@
       <file leaf-file-name="fact_checker_scraper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/fact_checker_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
+            <state relative-caret-position="1495">
               <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -107,9 +166,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -126,36 +186,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADA-Sciuto-Smith-Tarantino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADA-Sciuto-Smith-Tarantino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADA-Sciuto-Smith-Tarantino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADA-Sciuto-Smith-Tarantino" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="ADA-Sciuto-Smith-Tarantino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADA-Sciuto-Smith-Tarantino" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ADA-Sciuto-Smith-Tarantino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADA-Sciuto-Smith-Tarantino" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,45 +235,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.sentiment_topic">
-    <configuration default="false" name="tryPlot" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ADA-Sciuto-Smith-Tarantino" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/plot_number_of_tweets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_stopwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ADA-Sciuto-Smith-Tarantino" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/get_stopwords.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -242,45 +252,14 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
     </configuration>
-    <configuration default="false" name="hillary_tweets" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ADA-Sciuto-Smith-Tarantino" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/hillary_tweets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sentiment_topic" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ADA-Sciuto-Smith-Tarantino" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/sentiment_topic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -378,15 +357,6 @@
       <module name="ADA-Sciuto-Smith-Tarantino" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -429,6 +399,78 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
+    </configuration>
+    <configuration name="get_stopwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ADA-Sciuto-Smith-Tarantino" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/get_stopwords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="hillary_tweets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ADA-Sciuto-Smith-Tarantino" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/hillary_tweets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="sentiment_topic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ADA-Sciuto-Smith-Tarantino" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/sentiment_topic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="tryPlot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ADA-Sciuto-Smith-Tarantino" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project/plot_number_of_tweets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.tryPlot" />
@@ -517,6 +559,7 @@
       <option name="project" value="LOCAL" />
       <updated>1511800417792</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00009" summary="fixing folders">
       <created>1511803609775</created>
       <option name="number" value="00009" />
@@ -532,6 +575,16 @@
       <updated>1511804494401</updated>
     </task>
     <option name="localTasksCounter" value="11" />
+=======
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1511800526382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511800526382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+>>>>>>> 3355dddeb335dca024dc4a2024e88f64bf828db5
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -544,18 +597,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21084337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26967096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -563,13 +615,14 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26967096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -583,9 +636,14 @@
     <MESSAGE value="typos" />
     <MESSAGE value="typos.." />
     <MESSAGE value="fake news notebook structure added" />
+<<<<<<< HEAD
     <MESSAGE value="fixing folders" />
     <MESSAGE value="fixed hillary everywhere" />
     <option name="LAST_COMMIT_MESSAGE" value="fixed hillary everywhere" />
+=======
+    <MESSAGE value="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/christian-5-28/ADA-Sciuto-Smith-Tarantino&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+>>>>>>> 3355dddeb335dca024dc4a2024e88f64bf828db5
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -809,7 +867,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dateutil/parser.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/dateutil/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="1069" column="4" lean-forward="false" selection-start-line="1069" selection-start-column="4" selection-end-line="1069" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project/fact_checked.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="46">
           <caret line="2" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
@@ -827,7 +891,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fact_checker_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
+        <state relative-caret-position="1495">
           <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -837,8 +901,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fake_news.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="389">
           <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+=======
+        <state relative-caret-position="852">
+          <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="59" />
+>>>>>>> 3355dddeb335dca024dc4a2024e88f64bf828db5
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
