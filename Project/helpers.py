@@ -52,6 +52,13 @@ def load_data():
     return all_data, condensed, master
 
 
+def select_time_interval(df, date_column, start_datetime, end_datetime):
+    """
+    returns a dataframe selected by a specific period of time
+    """
+    return df[(df[date_column] >= start_datetime) & (df[date_column] <= end_datetime)]
+
+
 def get_hillary_tweets_16_17(all_data):
     '''Retrieving tweets concernig hillary from 2016 and 2017'''
 
