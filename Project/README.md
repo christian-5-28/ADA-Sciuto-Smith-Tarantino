@@ -108,7 +108,7 @@ _Add here some questions you have for us, in general or project-specific._
 
 ###### EVENTS
 
-Once we began analyzing the frequency of using the fake news term and tweet frequency, we understood how it was not possible to automate the linking process between the tweets and particular events in that same period linked to Trump. As a result, we have decided to devote more time to the analysis and manually search for links in the periods when the highest peaks were reached. While there are a large amount of events and scandals during Trump's presidency, we have not really found any connection to events. The only event driven increase in tweet frequency we have found are linked to the party convention and big debate (and election night of course). We will have to continue to investigate this during milestone 3. 
+Once we began analyzing the tweet frequency, we understood how it was not possible to automate the linking process between the tweets and particular events in that same period linked to Trump. As a result, we have decided to devote more time to the analysis and manually search for links in the periods when the highest peaks were reached. While there are a large amount of events and scandals during Trump's presidency, we have not really found any connection to scandals. The only event driven increase in tweet frequency we have found are linked to "normal events" such as the party conventions and big debates (and election night of course). We will have to continue to investigate frequency increase from scandals during milestone 3.
 
 ###### FAKE NEWS ANALYSIS
 
@@ -125,4 +125,4 @@ In short, our plan for MS3 (note changes and goals stated above) is to
 
 * Pick out our most interesting results and expand on the discussion (maybe add some tiny bit of extra analysis).
 * Redo/rethink/redesign our result visualizations.
-* Create a data story in the form of a blog post using Jekyll and GitHub Pages.
+* Use the selected results (with creative visuallization) to create a data story in the form of a blog post (using Jekyll and GitHub Pages).
