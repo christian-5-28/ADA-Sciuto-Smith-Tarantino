@@ -100,3 +100,29 @@ Week by week. Deadline is 28/11 - 2017, i.e. Tuesday week 48.
 
 ## Questions for TAa
 _Add here some questions you have for us, in general or project-specific._
+
+
+# Update for milestone 2
+
+### CHANGE OF PREVIOUS PLAN
+
+###### EVENTS
+
+Once we began analyzing the frequency of using the fake news term and tweet frequency, we understood how it was not possible to automate the linking process between the tweets and particular events in that same period linked to Trump. As a result, we have decided to devote more time to the analysis and manually search for links in the periods when the highest peaks were reached. While there are a large amount of events and scandals during Trump's presidency, we have not really found any connection to events. The only event driven increase in tweet frequency we have found are linked to the party convention and big debate (and election night of course). We will have to continue to investigate this during milestone 3. 
+
+###### FAKE NEWS ANALYSIS
+
+We've decided to focus more on fake news analysis and also about finding data where Trump's tweets were fact-checked rather than starting an analysis on his retweets, since the fake news topic with its debunking seemed to us more interesting and more feasible with the data found during our search.
+
+###### COMPARISON WITH TRUMP AND HILLARY, OBAMA
+Obama doesn't really tweet much, so we realized that there's not much to compare on that front. Felt that a simple word analysis would not be enough so we decided to drop the Obama comparison. We will continue with the comparison between Trump and Hillary, hopefully with a new larger Hillary dataset for milestone 3.
+
+
+
+### PLAN FOR MILESTONE 3
+
+In short, our plan for MS3 (note changes and goals stated above) is to
+
+* Pick out our most interesting results and expand on the discussion (maybe add some tiny bit of extra analysis).
+* Redo/rethink/redesign our result visualizations.
+* Create a data story in the form of a blog post using Jekyll and GitHub Pages.
