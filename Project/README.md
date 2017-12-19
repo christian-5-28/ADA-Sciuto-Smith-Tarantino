@@ -149,7 +149,7 @@ Project was split up into five parts:
 Each person did all the coding and plotting work for his parts (data collection, analysis, plotting).
 
 For the data story, each person also wrote the text relating to his part.  
-(Erik uploaded and cleaned the graphs with Plotly)
+(Erik uploaded and cleaned/finalized the graphs with Plotly)
 
 * *Lorenzo*  
   * Topic Detection
