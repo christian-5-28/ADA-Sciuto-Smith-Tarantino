@@ -126,3 +126,34 @@ In short, our plan for MS3 (note changes and goals stated above) is to
 * Pick out our most interesting results and expand on the discussion (maybe add some tiny bit of extra analysis).
 * Redo/rethink/redesign our result visualizations.
 * Use the selected results (with creative visuallization) to create a data story in the form of a blog post (using Jekyll and GitHub Pages).
+
+
+
+# Update for milestone 3
+
+### Contribution details
+
+Project was split up into five parts:
+
+1. General Exploration
+2. Topic Detection
+3. Sentiment Analysis
+4. Usage of Fake News
+5. Hillary Clinton Comparison
+
+Each person did all the coding and plotting work for his parts (data collection, analysis, plotting).
+
+For the data story, each person also wrote the text relating to his part.  
+(Erik uploaded and cleaned the graphs with Plotly)
+
+* *Lorenzo*  
+  * Topic Detection
+  * Sentiment Analysis
+
+* *Erik*  
+  * Hillary comparison
+  * General exploration except for part done by Christian (see below)
+
+* *Christian*  
+  * Usage of Fake News, sentiment analysis on this part
+  * Graphs (and ofc corresponding code) titled 'Tweets per month for second half of campaign' & 'Tweets per month during presidency' in source device part of general exploration.
