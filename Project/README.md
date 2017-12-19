@@ -1,5 +1,6 @@
 # Behind Trump's Tweets
 
+[Link to data story.](https://smith-erik.github.io/datastory/milestone3/dataanalysis/2017/12/08/Behind-the-Tweets-of-Trump.html)
 
 ## Abstract
 
@@ -130,6 +131,10 @@ In short, our plan for MS3 (note changes and goals stated above) is to
 
 
 # Update for milestone 3
+
+### Data Story
+
+Check it out [here](https://smith-erik.github.io/datastory/milestone3/dataanalysis/2017/12/08/Behind-the-Tweets-of-Trump.html).
 
 ### Contribution details
 
