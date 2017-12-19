@@ -157,3 +157,5 @@ For the data story, each person also wrote the text relating to his part.
 * *Christian*  
   * Usage of Fake News, sentiment analysis on this part
   * Graphs (and ofc corresponding code) titled 'Tweets per month for second half of campaign' & 'Tweets per month during presidency' in source device part of general exploration.
+
+We will all work on the poster and final presentation.
